@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mayuresh- One Page Two Column Resume
+% link- https://www.overleaf.com/project/62ef53a50d8f20735ee04c24
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{stix}
+\definecolor{boxcolor}{HTML}{108f64}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mayuresh}{Zende}
+{ 
+DOB - 1 Dec, 1996 | Address - Pune, India \\
++91 7776001300 | \href{mailto:mayureshzende@gmail.com}{mayureshzende@gmail.com} | 
+\urlstyle{same}\href{https://www.linkedin.com/in/mayuresh-zende}{LinkedIn - mayureshzende}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\sectionsep
+\subsection{Pune University }
+\descript{B.E. in Computer Engineering}
+Grad. Jun 2019 | Cum. Per: 71\%  
+\sectionsep
+
+\subsection{MSBTE }
+\descript{Diploma in Computer Engineering}
+Grad. May 2015 | Cum. Per: 83.5\%
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+GitHub:- \href{https://github.com/mayureshzende}{\bf mayureshzende} \\
+Twitter:-  \href{https://twitter.com/MayureshZende}{\bf @Mayureshzende} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Under-Graduate}
+\sectionsep
+Introduction to Programming \\
+Harvard's cs50 \\
+Object Oriented Programming \\
+Data Structures \\
+R-DBMS | NO-SQL  \\
+Operating Systems \\
+Functional Programming \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{ Confident:}
+\textbullet{} JavaScript \textbullet{} Java \\
+\sectionsep
+\location{Familiar:}
+\textbullet{} Type Script \textbullet{} Cpp \textbullet{} python \textbullet{} C \\ 
+\textbullet{} MySQL \textbullet{} HTML 
+\textbullet{} CSS \textbullet{} NodeJS \\
+\sectionsep
+\location{Tools:}
+\textbullet{} Linux \textbullet{} Git \textbullet{} Jira \textbullet{} confluence \\
+\textbullet{} Chrome Dev Tools \\
+\sectionsep
+\location{Framework's \& Library:}
+\textbullet{} React JS \textbullet{} Spring boot \textbullet{} RXJS 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\subsection{OTHERS}
+\sectionsep
+\textbullet{} Quick Learner \\
+\textbullet{} Innovative \\
+\textbullet{} Team Player \\
+\textbullet{} Gym | athletics \\
+\textbullet{} Reading \\
+\textbullet{} Teaching \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience - 3+ Years}
+\runsubsection{GlobalLogic}
+\descript{| Jan 2021 - Present | Pune, MH}
+\location{ Icim's Lab (May 2022 - present ) | Full Stack Software Engineer}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developing application, following \textbf{agile} methodologies and \textbf{Jira} standards.
+\item Implemented \textbf{SPA} in \textbf{ReactJS} using Material-UI components.
+\item \textbf{Integration} of the frontend with the \textbf{backend using Backend to front end(middle-ware)} for \textbf{masking the API endpoints.}
+\item Wrote API's in Java \textbf{Spring boot} that efficiently communicates with the Postgres SQL database.
+\item \textbf{Full-stack developer} - Wrote and \textbf{reviewed code for JS, Java, NodeJS and Spring Boot. Used Jenkins for CI/CD}.
+\end{tightemize}
+\sectionsep
+
+\location{ HSBC (Jun 2020 - April 2022) | Full Stack Software Engineer}
+\begin{tightemize}
+\item Worked with Product Manager to Develop an Internal multi-page Application into single Page Application that was used by 4000+ users.
+\item \textbf{Integration} of the frontend with the backend using \textbf{Backend to front end(middle-ware) for masking the API endpoints}.
+\item Wrote front-end code, back-end code, integrated projects with \textbf{frameworks and APIs}, and utilized multiple \textbf{CLI tools}.
+\item Created informative and effective documentation, reports, and inline \textbf{comments on 100\% of code/work accomplished}.
+\item Efficiently writing the Backend code in \textbf{Nest JS, for APIs} to communicate with frontend JS.
+\item \textbf{Deployed applications to production.} Ensured the Applications are running successfully.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Bitwise}
+\descript{| Trainee Programmer | Aug 2019 – Jun 2020 | Pune, MH}
+\location{}
+\vspace{\topsep}
+\begin{tightemize}
+\item \textbf{User Story analysis, development and enhancement} using Agile methodology.
+\item Built application using \textbf{Java Object Oriented Design, Collections framework and multithreading}. Used JDBC Connectivity, for data Processing and Handling of, SQL \& ORACLE database.
+\item \textbf{Continuous integration/deployment} as necessary, to improve continuous integration practices.
+\item Developed \textbf{high quality code} and improved the performance by 40\%. Performed  \textbf{Documentation, Unit testing, Debugging.}
+\item Suggested and worked on  \textbf{project Improvement process.}
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\runsubsection{ \href{http://infinite-reef-30125.herokuapp.com/} {\bf Social DevConnector} |  MERN STACK  }
+\descript{}
+\location{}
+\vspace{\topsep}
+\begin{tightemize}
+\item Built a full stack social network app with React, Redux, Node, Express \& MongoDB
+\item Created an extensive backend API with Express, Used Stateless JWT authentication. Integrated React with an Express backend in an elegant way.
+\item Used React Hooks, Async/Await, modern practices,Used Redux for state management
+\item Deployed to Heroku using postbuild script
+\item Link: \href{http://infinite-reef-30125.herokuapp.com/} {\bf Social DevConnector}
+\end{tightemize}
+\sectionsep
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
